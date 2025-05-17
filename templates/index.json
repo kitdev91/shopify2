@@ -31,8 +31,8 @@
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
+        "button",
+        "text"
       ],
       "settings": {
         "image_overlay_opacity": 40,
