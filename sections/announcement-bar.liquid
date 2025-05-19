@@ -20,7 +20,7 @@
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 <div
-  class="announce-bar" style="background:{{ section.settings.background_color }};"  aria-label="{{ 'sections.header.announcement' | t }}" {{ section.blocks.first.shopify_attributes }}>
+  class="announce-bar" style="background:{{ section.settings.background_color }};" aria-label="{{ 'sections.header.announcement' | t }}" {{ section.blocks.first.shopify_attributes }}>
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
     {%- if section.settings.show_social and social_icons -%}
       {%- render 'social-icons' -%}
@@ -31,6 +31,7 @@
           {%- if section.blocks.first.settings.link != blank -%}
             <a
               href="{{ section.blocks.first.settings.link }}"
+              style="color:{{ section.settings.announcement_text_color }};"
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
@@ -90,7 +91,7 @@
                   {%- if block.settings.text != blank -%}
                     {%- if block.settings.link != blank -%}
                       <a
-                        href="{{ block.settings.link }}" style="color:{{ section.settings.announcement_text_color }};"
+                        href="{{ block.settings.link }}"
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
