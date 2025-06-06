@@ -1,0 +1,194 @@
+<div class="hero hero2">
+  <div class="hero2__collection1">
+  {%- if section.settings.image_1 != blank -%}
+        <img srcset="{%- if section.settings.image_1.width >= 165 -%}{{ section.settings.image_1 | img_url: '165x' }} 165w,{%- endif -%}
+          {%- if section.settings.image_1.width >= 360 -%}{{ section.settings.image_1 | img_url: '360x' }} 360w,{%- endif -%}
+          {%- if section.settings.image_1.width >= 535 -%}{{ section.settings.image_1 | img_url: '535x' }} 535w,{%- endif -%}
+          {%- if section.settings.image_1.width >= 720 -%}{{ section.settings.image_1 | img_url: '720x' }} 720w,{%- endif -%}
+          {%- if section.settings.image_1.width >= 940 -%}{{ section.settings.image_1 | img_url: '940x' }} 940w,{%- endif -%}
+          {%- if section.settings.image_1.width >= 1070 -%}{{ section.settings.image_1 | img_url: '2000x' }} 2000w{%- endif -%}"
+          src="{{ section.settings.image_1 | img_url: '533x' }}"
+          sizes="(min-width: 1100px) 2000px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ section.settings.image_1.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.image_1.width }}"
+          height="{{ section.settings.image_1_1.height }}"
+          class="hero2__bg"
+        >
+  {%- else -%}
+  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+  {% assign opacity1 = section.settings.opacity_1 | divided_by: 100.0 %}
+    <div class="hero2__content-container" style="background-color: {{ section.settings.container-background_1 | color_modify: 'alpha', opacity1 }}">
+      <div class="hero2__info">
+      {%- if section.settings.button_text_1 != blank -%}
+        <a href="{{section.settings.button_link_1 }}"
+        class="hero2__button">{{ section.settings.button_text_1 | escape }}</a>
+      {%- endif -%}
+        </div>
+    </div>
+  </div>
+  <div class="hero2__collection2">
+  {%- if section.settings.image_2 != blank -%}
+        <img srcset="{%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | img_url: '165x' }} 165w,{%- endif -%}
+          {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w,{%- endif -%}
+          {%- if section.settings.image_2.width >= 535 -%}{{ section.settings.image_2 | img_url: '535x' }} 535w,{%- endif -%}
+          {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | img_url: '720x' }} 720w,{%- endif -%}
+          {%- if section.settings.image_2.width >= 940 -%}{{ section.settings.image_2 | img_url: '940x' }} 940w,{%- endif -%}
+          {%- if section.settings.image_2.width >= 1070 -%}{{ section.settings.image_2 | img_url: '2000x' }} 2000w{%- endif -%}"
+          src="{{ section.settings.image_2 | img_url: '533x' }}"
+          sizes="(min-width: 1100px) 2000px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ section.settings.image_2.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.image_2.width }}"
+          height="{{ section.settings.image_2.height }}"
+          class="hero2__bg"
+        >
+  {%- else -%}
+  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+  {% assign opacity2 = section.settings.opacity_2 | divided_by: 100.0 %}
+    <div class="hero2__content-container" style="background-color: {{ section.settings.container-background_2 | color_modify: 'alpha', opacity2 }}">
+      <div class="hero2__info">
+      {%- if section.settings.button_text_2 != blank -%}
+        <a href="{{section.settings.button_link_2 }}"
+        class="hero2__button">{{ section.settings.button_text_2 | escape }}</a>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Hero Two",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "color",
+      "id": "container-background_1",
+      "label": "Left Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "container-background_2",
+      "label": "Right Background",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "opacity_1",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Left Opacity",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "opacity_2",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Right Opacity",
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+      "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+      "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Left Link"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Right Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents. "
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.image-with-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Two"
+    }
+  ]
+}
+{% endschema %}
