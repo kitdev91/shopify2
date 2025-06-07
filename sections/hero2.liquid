@@ -1,4 +1,4 @@
-<div class="hero hero2">
+<div class="hero hero2 hero2--{{ section.settings.hero_height }}">
   <div class="hero2__collection1">
   {%- if section.settings.image_1 != blank -%}
         <img srcset="{%- if section.settings.image_1.width >= 165 -%}{{ section.settings.image_1 | img_url: '165x' }} 165w,{%- endif -%}
@@ -71,6 +71,30 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "hero_height",
+      "options": [
+        {
+          "value": "25vh",
+          "label": "25% Height"
+        },
+        {
+          "value": "50vh",
+          "label": "50% Height"
+        },
+        {
+          "value": "75vh",
+          "label": "75% Height"
+        },
+        {
+          "value": "100vh",
+          "label": "100% Height"
+        }
+      ],
+      "default": "100vh",
+      "label": "Hero Height Size"
+    },
     {
       "type": "image_picker",
       "id": "image_1",
