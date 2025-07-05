@@ -33,7 +33,11 @@
           }
         }
       },
-      "block_order": ["heading_GjtWmg", "paragraph_H4NFDU", "button_G7ixxK"],
+      "block_order": [
+        "heading_GjtWmg",
+        "paragraph_H4NFDU",
+        "button_G7ixxK"
+      ],
       "name": "Hero One",
       "settings": {
         "hero_height": "50vh",
@@ -128,7 +132,11 @@
           }
         }
       },
-      "block_order": ["heading_hfTrAU", "paragraph_kwdzxj", "button_dT89Bg"],
+      "block_order": [
+        "heading_hfTrAU",
+        "paragraph_kwdzxj",
+        "button_dT89Bg"
+      ],
       "name": "Collection Product Single",
       "settings": {
         "collection": "",
@@ -212,7 +220,11 @@
           }
         }
       },
-      "block_order": ["heading_fjqqrG", "paragraph_xJCx7F", "button_qfVkky"],
+      "block_order": [
+        "heading_fjqqrG",
+        "paragraph_xJCx7F",
+        "button_qfVkky"
+      ],
       "name": "Collection Product Single",
       "settings": {
         "collection": "",
@@ -253,7 +265,11 @@
           }
         }
       },
-      "block_order": ["heading_w6Q3Fh", "paragraph_TdJjyF", "button_ndYqhx"],
+      "block_order": [
+        "heading_w6Q3Fh",
+        "paragraph_TdJjyF",
+        "button_ndYqhx"
+      ],
       "name": "Hero One",
       "settings": {
         "hero_height": "50vh",
