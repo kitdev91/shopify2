@@ -9,82 +9,140 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "hero1_UAENmL": {
+      "type": "hero1",
       "blocks": {
-        "heading": {
+        "heading_GjtWmg": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "title": "Title",
+            "title_size": "md"
           }
         },
-        "text": {
-          "type": "text",
+        "paragraph_H4NFDU": {
+          "type": "paragraph",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
           }
         },
-        "button": {
-          "type": "buttons",
+        "button_G7ixxK": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_text": "Button label",
+            "button_link": ""
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button",
-        "text"
-      ],
+      "block_order": ["heading_GjtWmg", "paragraph_H4NFDU", "button_G7ixxK"],
+      "name": "Hero One",
       "settings": {
-        "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "hero_height": "50vh",
+        "container-background": "#000000",
+        "opacity": 50,
+        "info_alignment": "center"
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "hero_two_zjYFfn": {
+      "type": "hero-two",
+      "name": "Hero Two",
+      "settings": {
+        "hero_height": "100vh",
+        "container-background_1": "#000000",
+        "container-background_2": "#000000",
+        "opacity_1": 50,
+        "opacity_2": 50,
+        "button_text_1": "Button label",
+        "button_text_2": "Button label",
+        "button_link_1": "",
+        "button_link_2": ""
+      }
+    },
+    "collection_group_aYXKpk": {
+      "type": "collection-group",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "featured_collection_Pietky": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "collection": ""
           }
         },
-        "text": {
-          "type": "text",
+        "featured_collection_kp7Fjj": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "collection": ""
+          }
+        },
+        "featured_collection_t4MhKy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_GWBbnU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "featured_collection_Pietky",
+        "featured_collection_kp7Fjj",
+        "featured_collection_t4MhKy",
+        "featured_collection_GWBbnU"
       ],
+      "name": "Collection Group",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "container_shape": "rectangle",
+        "container-background": "#edeff5",
+        "opacity": 100,
+        "show_title": true,
+        "xxl_col": "col-xxl-2",
+        "xl_col": "col-xl-2",
+        "lg_col": "col-lg-3",
+        "md_col": "col-md-6",
+        "sm_col": "col-sm-6"
+      }
+    },
+    "collection_product_single_VVXRUB": {
+      "type": "collection-product-single",
+      "blocks": {
+        "heading_hfTrAU": {
+          "type": "heading",
+          "settings": {
+            "title": "Title",
+            "title_size": "md"
+          }
+        },
+        "paragraph_kwdzxj": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
+          }
+        },
+        "button_dT89Bg": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": ["heading_hfTrAU", "paragraph_kwdzxj", "button_dT89Bg"],
+      "name": "Collection Product Single",
+      "settings": {
+        "collection": "",
+        "total_products": 8,
+        "container_shape": "rectangle",
+        "container-background": "#edeff5",
+        "opacity": 100,
+        "show_title": true,
+        "show_price": true,
+        "xxl_col": "col-xxl-3",
+        "xl_col": "col-xl-3",
+        "lg_col": "col-lg-3",
+        "md_col": "col-md-3",
+        "sm_col": "col-sm-3"
       }
     },
     "featured_collection": {
@@ -115,119 +173,104 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
+    "hero_two_j9eYRy": {
+      "type": "hero-two",
+      "name": "Hero Two",
+      "settings": {
+        "hero_height": "50vh",
+        "container-background_1": "#000000",
+        "container-background_2": "#000000",
+        "opacity_1": 50,
+        "opacity_2": 50,
+        "button_text_1": "Button label",
+        "button_text_2": "Button label",
+        "button_link_1": "",
+        "button_link_2": ""
+      }
+    },
+    "collection_product_single_PqWwdY": {
+      "type": "collection-product-single",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "heading_fjqqrG": {
+          "type": "heading",
           "settings": {
-            "collection": ""
+            "title": "Title",
+            "title_size": "md"
           }
         },
-        "product": {
-          "type": "product",
+        "paragraph_xJCx7F": {
+          "type": "paragraph",
           "settings": {
-            "product": "",
-            "second_image": false
+            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "button_qfVkky": {
+          "type": "button",
           "settings": {
-            "collection": ""
+            "button_text": "Button label",
+            "button_link": ""
           }
         }
       },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
+      "block_order": ["heading_fjqqrG", "paragraph_xJCx7F", "button_qfVkky"],
+      "name": "Collection Product Single",
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "collection": "",
+        "total_products": 8,
+        "container_shape": "rectangle",
+        "container-background": "#edeff5",
+        "opacity": 100,
+        "show_title": true,
+        "show_price": true,
+        "xxl_col": "col-xxl-3",
+        "xl_col": "col-xl-3",
+        "lg_col": "col-lg-3",
+        "md_col": "col-md-3",
+        "sm_col": "col-sm-3"
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
+    "hero1_bRNNnQ": {
+      "type": "hero1",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "heading_w6Q3Fh": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Title",
+            "title_size": "md"
           }
         },
-        "column2": {
-          "type": "column",
+        "paragraph_TdJjyF": {
+          "type": "paragraph",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
           }
         },
-        "column3": {
-          "type": "column",
+        "button_ndYqhx": {
+          "type": "button",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "button_text": "Button label",
+            "button_link": ""
           }
         }
       },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+      "block_order": ["heading_w6Q3Fh", "paragraph_TdJjyF", "button_ndYqhx"],
+      "name": "Hero One",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "hero_height": "50vh",
+        "container-background": "#000000",
+        "opacity": 50,
+        "info_alignment": "center"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
+    "hero1_UAENmL",
+    "hero_two_zjYFfn",
+    "collection_group_aYXKpk",
+    "collection_product_single_VVXRUB",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "hero_two_j9eYRy",
+    "collection_product_single_PqWwdY",
+    "hero1_bRNNnQ"
   ]
 }
