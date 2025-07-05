@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -11,7 +20,8 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -21,7 +31,8 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -31,7 +42,8 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -40,14 +52,29 @@
           }
         }
       },
-      "block_order": ["vendor", "title", "caption", "price", "buy_buttons", "description", "share"]
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {}
     },
     "related-products": {
-      "type": "related-products"
+      "type": "related-products",
+      "settings": {}
     },
     "hero-two": {
-      "type": "hero-two"
+      "type": "hero-two",
+      "settings": {}
     }
   },
-  "order": ["hero-two", "main", "related-products"]
+  "order": [
+    "hero-two",
+    "main",
+    "related-products"
+  ]
 }
