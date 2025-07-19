@@ -1,0 +1,38 @@
+:root {
+  --body-bg: #f7f9fd;
+  --announce-bar-default: #605e7d;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+ahover {
+  color: rgb(248, 76, 76);
+}
+
+.fixed-nav.transparent-nav .header {
+  background: transparent;
+}
+
+.fixed-nav.transparent-nav .header a {
+  color: #fff;
+}
+
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link_-sublinks a,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link_-sublinks a,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link_-sublinks a {
+  color: black;
+}
+
+.fixed-nav.transparent-nav .header .header1__collection-link .collection-link_-sublinks a:hover,
+.fixed-nav.transparent-nav .header .header2__collection-link .collection-link_-sublinks a:hover,
+.fixed-nav.transparent-nav .header .header3__collection-link .collection-link_-sublinks a:hover {
+  color: red;
+}
+
+.fixed-nav .header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
