@@ -20,6 +20,18 @@
         "label": "Global Body Background",
         "default": "#f7f9fd",
         "info": "Global Background Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_sticky",
+        "label": "Sticky Header",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "header_transparent",
+        "label": "Transparent Header",
+        "default": false
       }
     ]
   },
