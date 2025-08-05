@@ -97,9 +97,9 @@
         "container-background": "#edeff5",
         "opacity": 100,
         "show_title": true,
-        "xxl_col": "col-xxl-2",
-        "xl_col": "col-xl-2",
-        "lg_col": "col-lg-3",
+        "xxl_col": "col-xxl-4",
+        "xl_col": "col-xl-4",
+        "lg_col": "col-lg-4",
         "md_col": "col-md-6",
         "sm_col": "col-sm-6"
       }
