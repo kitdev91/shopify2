@@ -22,14 +22,14 @@
         "paragraph_H4NFDU": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
+            "paragraph": "Designer apparel for any dashing dame"
           }
         },
         "button_G7ixxK": {
           "type": "button",
           "settings": {
             "button_text": "Shop Apparel",
-            "button_link": ""
+            "button_link": "shopify://collections/pet-apparel"
           }
         }
       },
