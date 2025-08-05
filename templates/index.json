@@ -40,9 +40,10 @@
       ],
       "name": "Hero One",
       "settings": {
-        "hero_height": "50vh",
-        "container-background": "#000000",
-        "opacity": 50,
+        "hero_height": "100vh",
+        "image": "shopify://shop_images/43771676324391_.pic.jpg",
+        "container-background": "#334fb4",
+        "opacity": 28,
         "info_alignment": "center"
       }
     },
