@@ -1,0 +1,239 @@
+{{ 'Hero1.css' | asset_url | stylesheet_tag }}
+<style>
+    .product-highlight{
+        background: black;
+        padding: 100px 0;
+
+    }
+
+    .product-highlight__img{
+    width: 100%;
+    height: auto;
+    }
+
+    .product-highlight__info-container h2{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .product-highlight__paragraph{
+        font-size: 1.2rem;
+        line-height: 1.4;
+        color: white;
+    }
+
+    .product-highlight__button{
+        background: white;
+        border: none;
+        padding: 15px; 40px;
+    }
+</style>
+
+<div class="product-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {%- if section.settings.image != blank -%}
+                      <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+                        {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+                        {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+                        {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{%- endif -%}
+                        {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | img_url: '940x' }} 940w,{%- endif -%}
+                        {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '2000x' }} 2000w{%- endif -%}"
+                        src="{{ section.settings.image | img_url: '533x' }}"
+                        sizes="(min-width: 1100px) 2000px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                        alt="{{ section.settings.image.alt | escape }}"
+                        loading="lazy"
+                        width="{{ section.settings.image.width }}"
+                        height="{{ section.settings.image.height }}"
+                        class="product-highlight__img"
+                      >
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="col-md-4">
+                <div class="product-highlight__info-container">
+
+                    {%- for block in section.blocks -%}
+                      {% case block.type %}
+                        {%- when 'heading' -%}
+                            <h2 class="product-highlight__title product-highlight__title_{{ block.settings.title_size }}">  {{ block.settings.title | escape }}</h2>
+                        {%- when 'paragraph' -%}
+                            <p class="product-highlight__paragraph">{{ block.settings.paragraph }}</p>
+                        {%- when 'button' -%}
+                          {%- if block.settings.button_text != blank -%}
+                          <button class="product-highlight__button">{{ block.settings.button_text | escape }} </button>
+                          {%- endif -%}
+                      {%- endcase -%}
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Product Highlight",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+  {
+    "type": "select",
+    "id": "hero_height",
+    "options": [
+      {
+        "value": "25vh",
+        "label": "25% Height"
+      },
+      {
+        "value": "50vh",
+        "label": "50% Height"
+      },
+      {
+        "value": "75vh",
+        "label": "75% Height"
+      },
+      {
+        "value": "100vh",
+        "label": "100% Height"
+      }
+    ],
+    "default": "100vh",
+    "label": "Hero Height Size"
+  },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "color",
+      "id": "container-background",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Opacity",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "info_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right",
+      "label": "Info Alignment"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "options": [
+            {
+              "value": "sm",
+              "label": "Small"
+            },
+            {
+              "value": "md",
+              "label": "Medium"
+            },
+            {
+              "value": "lg",
+              "label": "Large"
+            },
+            {
+              "value": "xl",
+              "label": "Extra Large"
+            }
+          ],
+          "default": "md",
+          "label": "Title Font Size"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents. "
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.image-with-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Highlight",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
