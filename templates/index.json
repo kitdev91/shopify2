@@ -70,33 +70,26 @@
         "featured_collection_Pietky": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "pet-apparel"
           }
         },
         "featured_collection_kp7Fjj": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "pet-accessories"
           }
         },
         "featured_collection_t4MhKy": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_GWBbnU": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "collars-and-leashes"
           }
         }
       },
       "block_order": [
         "featured_collection_Pietky",
         "featured_collection_kp7Fjj",
-        "featured_collection_t4MhKy",
-        "featured_collection_GWBbnU"
+        "featured_collection_t4MhKy"
       ],
       "name": "Collection Group",
       "settings": {
