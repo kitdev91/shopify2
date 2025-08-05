@@ -52,12 +52,14 @@
       "name": "Hero Two",
       "settings": {
         "hero_height": "100vh",
-        "container-background_1": "#000000",
-        "container-background_2": "#000000",
-        "opacity_1": 50,
-        "opacity_2": 50,
-        "button_text_1": "Button label",
-        "button_text_2": "Button label",
+        "image_1": "shopify://shop_images/25461621732551_.pic.jpg",
+        "image_2": "shopify://shop_images/cozyfluff-winter-dog-clothes-warm-and-stylish-pet-apparel-for-medium-sized-dogs-310854.jpg",
+        "container-background_1": "#334fb4",
+        "container-background_2": "#334fb4",
+        "opacity_1": 23,
+        "opacity_2": 24,
+        "button_text_1": "PAWSOME NY",
+        "button_text_2": "DOG HUGS CAT",
         "button_link_1": "",
         "button_link_2": ""
       }
