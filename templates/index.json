@@ -104,63 +104,18 @@
         "sm_col": "col-sm-6"
       }
     },
-    "collection_product_single_VVXRUB": {
-      "type": "collection-product-single",
-      "blocks": {
-        "heading_hfTrAU": {
-          "type": "heading",
-          "settings": {
-            "title": "Title",
-            "title_size": "md"
-          }
-        },
-        "paragraph_kwdzxj": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "Example Message I'm baby kogi cardigan kitsch hammock banjo. Typewriter viral man braid hot chicken, farm-to-table fashion axe intelligentsia lomo green juice ramps irony succulents."
-          }
-        },
-        "button_dT89Bg": {
-          "type": "button",
-          "settings": {
-            "button_text": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_hfTrAU",
-        "paragraph_kwdzxj",
-        "button_dT89Bg"
-      ],
-      "name": "Collection Product Single",
-      "settings": {
-        "collection": "collars-and-leashes",
-        "total_products": 8,
-        "container_shape": "rectangle",
-        "container-background": "#edeff5",
-        "opacity": 100,
-        "show_title": true,
-        "show_price": false,
-        "xxl_col": "col-xxl-3",
-        "xl_col": "col-xl-3",
-        "lg_col": "col-lg-3",
-        "md_col": "col-md-3",
-        "sm_col": "col-sm-3"
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
@@ -168,7 +123,7 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
@@ -279,7 +234,6 @@
     "hero1_UAENmL",
     "hero_two_zjYFfn",
     "collection_group_aYXKpk",
-    "collection_product_single_VVXRUB",
     "featured_collection",
     "hero_two_j9eYRy",
     "collection_product_single_PqWwdY",
