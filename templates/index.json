@@ -60,8 +60,8 @@
         "opacity_2": 24,
         "button_text_1": "PAWSOME NY",
         "button_text_2": "DOG HUGS CAT",
-        "button_link_1": "",
-        "button_link_2": ""
+        "button_link_1": "shopify://collections/pawsome-ny",
+        "button_link_2": "shopify://collections/dog-hugs-cat"
       }
     },
     "collection_group_aYXKpk": {
