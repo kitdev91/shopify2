@@ -137,6 +137,8 @@
         "type": "header",
         "settings": {
           "header_type": "header1",
+          "logo": "shopify://shop_images/blue_canyne_logo_color.png",
+          "logo_width": 100,
           "menu": "main-menu",
           "menu_two": "main-menu",
           "menu_type_desktop": "dropdown",
