@@ -103,11 +103,11 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "social_facebook_link": "",
+    "social_facebook_link": "https://",
     "social_instagram_link": "",
-    "social_youtube_link": "",
-    "social_tiktok_link": "",
-    "social_twitter_link": "",
+    "social_youtube_link": "https://",
+    "social_tiktok_link": "https://",
+    "social_twitter_link": "https://",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -163,17 +163,25 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "link_list_myRjMM": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "link_list_myRjMM"
         ],
         "settings": {
-          "newsletter_enable": false,
-          "newsletter_heading": "Subscribe to our emails",
-          "footer_p": "",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our email",
+          "footer_p": "Join our Blue Canyne mailing list for new updates on our products",
           "show_social": true,
-          "footer_bottom_menu": ""
+          "footer_bottom_menu": "main-menu-2"
         }
       }
     },
