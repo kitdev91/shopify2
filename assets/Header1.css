@@ -64,7 +64,9 @@
     visibility: visible;
     opacity: 1;
 }
-
+.header1__logo {
+    padding: 0 20px;
+}
 .header1__logo a {
     font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
