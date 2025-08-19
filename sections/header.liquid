@@ -9,6 +9,7 @@
     <div class="header header1">
         <input class="header1__side-menu" name="slide" type="radio" id="side-menu"/>
         <input class="header1__side-menu" name="slide" type="radio" id="close-menu"/>
+        <input class="header1__side-menu" type="radio" id="open-menu"/>
         <ul class="header1__collections-nav">
             <label class="header1__close" for="close-menu"><i class="fas fa-times"></i></label>
         {%- if section.settings.menu != blank -%}
@@ -17,7 +18,8 @@
                 <li class="header1__collection-link"><a href="{{ link.url }}">{{- link.title | escape -}}</a></li>
             {%- else -%}
                 <li class="header1__collection-link">
-                <a href="{{ link.url }}">{{- link.title | escape -}}<i class="fas fa-chevron-down"></i></a>
+                <label class="header1__open" for="open-menu"><i class="fas fa-chevron-down"></i></label>
+                <a href="{{ link.url }}">{{- link.title | escape -}}</a>
                     <ul class="collection-link__sub-links">
                     {%- for childlink in link.links -%}
                         <li><a href="{{ childlink.url }}">{{- childlink.title | escape -}}</a></li>

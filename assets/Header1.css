@@ -89,6 +89,9 @@
     padding: 40px 20px;
     display: none;
 }
+.header1__open {
+    cursor: pointer;
+}
 .header1__user-account a {
     padding: 10px;
 }
@@ -110,7 +113,7 @@
         height: 100vh;
         width: 100vh;
         max-width: 145px;
-        background: rgb(22, 22, 22);
+        background: #fff;
         line-height: 25px;
         padding: 10px 10px;
         z-index: 999;
@@ -136,6 +139,13 @@
     #side-menu:checked ~ .header1__collections-nav {
         left: 0%;
         display: initial;
+    }
+
+    #open-menu:checked ~ .header1__collection-link .collection-link__sub-links {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 0rem;
     }
 }
 
@@ -156,7 +166,7 @@
         height: 100vh;
         width: 100vh;
         max-width: 145px;
-        background: rgb(22, 22, 22);
+        background: #fff;
         line-height: 25px;
         padding: 10px 10px;
         z-index: 999;
@@ -182,6 +192,13 @@
     #side-menu:checked ~ .header1__collections-nav {
         left: 0%;
         display: initial;
+    }
+
+    #open-menu:checked ~ .header1__collection-link .collection-link__sub-links {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 0rem;
     }
 }
 
@@ -202,7 +219,7 @@
         height: 100vh;
         width: 100vh;
         max-width: 145px;
-        background: rgb(22, 22, 22);
+        background: #fff;
         line-height: 25px;
         padding: 10px 10px;
         z-index: 999;
@@ -228,5 +245,12 @@
     #side-menu:checked ~ .header1__collections-nav {
         left: 0%;
         display: initial;
+    }
+
+    #open-menu:checked ~ .header1__collection-link .collection-link__sub-links {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 0rem;
     }
 }
